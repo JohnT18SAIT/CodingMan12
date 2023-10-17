@@ -2,10 +2,18 @@
 #fahrenheit = (celsius * 9/5) + 32
 #print (f"{celsius} Celsius to Fahrenheit is {fahrenheit}")
 
-def celsius_to_fahrenheit(celsius):
-    fahrenheit = (celsius * 9/5) + 32
-    return fahrenheit
+#def celsius_to_fahrenheit(celsius):
+    #fahrenheit = (celsius * 9/5) + 32
+    #return fahrenheit
 
-celsius_temperature = 25
-fahrenheit_temperature = celsius_to_fahrenheit(celsius_temperature)
-print(f"{celsius_temperature} degrees Celsius is equal to {fahrenheit_temperature} degrees Fahrenheit")
+#celsius_temperature = 25
+#fahrenheit_temperature = celsius_to_fahrenheit(celsius_temperature)
+#print(f"{celsius_temperature} degrees Celsius is equal to {fahrenheit_temperature} degrees Fahrenheit")
+
+def fahrenheit_to_celsius(fahrenheit):
+    celsius = (fahrenheit - 32) * 5/9
+    return celsius
+
+fahrenheit_temperature = 82
+celsius_temperature = fahrenheit_to_celsius(fahrenheit_temperature)
+print(f"{fahrenheit_temperature} degrees Fahrenheit is {celsius_temperature} degrees Celsius")
